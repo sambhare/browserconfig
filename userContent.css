@@ -1,0 +1,22 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+/* Set toolkit.legacyUserProfileCustomizations.stylesheets to true in about:config*/
+
+@-moz-document url-prefix("about:reader") {
+    .moz-reader-content a:link {
+        color: #0000bb !important;
+        text-decoration: none !important;
+    }
+
+    .moz-reader-content a:visited {
+        color: #bb00bb !important;
+    }
+
+    .moz-reader-content a:hover {
+        text-decoration: underline !important;
+    }
+
+    .toolbar-container {
+        position: relative !important;
+    }
+}
