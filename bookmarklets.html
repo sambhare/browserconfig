@@ -11,7 +11,7 @@
 <h1>Bookmarklets</h1>
 
 <div>
-<a href="javascript:(function zapFonts(){const newFont=prompt('Font','Open Sans');const xzCss='@import url(&quot;https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/'+newFont.toLocaleLowerCase().replace(' ','-')+'.min.css&quot;);';const gFontsCss='@import url(&quot;https://fonts.googleapis.com/css?family='+newFont.replace(' ','+')+'&display=swap&quot;);';const newCss=xzCss+gFontsCss+'*{font-family:'+newFont+'!important}code,pre,tt{font-family:monospace!important;}';const a=document.createElement('link');a.rel='stylesheet';a.href='data:text/css,'+encodeURI(newCss);document.getElementsByTagName('head')[0].appendChild(a);})();">zap fonts</a>: Change fonts using XZ Fonts/Google Fonts/local fonts
+<a href="javascript:(function zapFonts(){const newFont=prompt('Font','Open Sans').trim();const xzCss='@import url(&quot;https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/'+newFont.toLocaleLowerCase().replace(' ','-')+'.min.css&quot;);';const gFontsCss='@import url(&quot;https://fonts.googleapis.com/css?family='+newFont.replace(' ','+')+'&display=swap&quot;);';const newCss=xzCss+gFontsCss+'*{font-family:'+newFont+'!important}code,pre,tt{font-family:monospace!important;}';const a=document.createElement('link');a.rel='stylesheet';a.href='data:text/css,'+encodeURI(newCss);document.getElementsByTagName('head')[0].appendChild(a);})();">zap fonts</a>: Change fonts using XZ Fonts/Google Fonts/local fonts
 </div>
 
 </body>
